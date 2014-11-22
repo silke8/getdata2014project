@@ -26,6 +26,7 @@ In detail:
 It is assumed, that the given dataset is in the subdirectory `UCI HAR Dataset` of the current directory.
 That directory is created when unpacking the given data set.
 Run the function doall() to do all reading and calculations:
+
     source("run_analysis.R")
     `result <- doall()`
 
