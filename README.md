@@ -25,6 +25,9 @@ In detail:
 
 It is assumed, that the given dataset is in the subdirectory `UCI HAR Dataset` of the current directory.
 That directory is created when unpacking the given data set.
+Run the function doall() to do all reading and calculations:
+    source("run_analysis.R")
+    `result <- doall()`
 
 The following functions are defined:
 
@@ -53,9 +56,9 @@ The id of the activities is substituted by the given name in `activityLabels`.
 The test data and the training data are concatenated by `rbind`.
 
 Of the resulting data frame only the measurements variables of means (containing `mean()` in its name)
-and standard deviation (containg `std()` in its name) are selected. The selected columns are the resulting data of the function
+and standard deviation (containg `std()` in its name) are selected. The selected columns are the resulting data of the function.
 
-   calcAverages(mydata)
+    calcAverages(mydata)
 
 Grouped by the subject and the activity the averages of the variables are aggregated.
 The resulting data frame is arranged according to subject and activity for better human reading.
